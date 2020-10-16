@@ -1,13 +1,13 @@
-<h1> Add a job </h1>
+<h1> 新增行程 </h1>
 
 <%= simple_form_for @job do |f| %>
 
-<%= f.input :title %>
-<%= f.input :description %>
-<%= f.input :wage_lower_bound, :label => "薪资下限" %>
-<%= f.input :wage_upper_bound, :label => "薪资上限" %>
-<%= f.input :contact_email %>
-<%= f.input :is_hidden %>
+<%= f.input :title, :label => "標題" %>
+<%= f.input :description, :label => "說明" %>
+<%= f.input :wage_lower_bound, :label => "隊伍人數" %>
+<%= f.input :wage_upper_bound, :label => "隊伍天數" %>
+<%= f.input :contact_email, :label => "連絡信箱"  %>
+<%= f.input :is_hidden, :label => "勾選隱藏"   %>
 
-  <%= f.submit "Submit" %>
+  <%= f.submit "送出"%>
 <% end %>
